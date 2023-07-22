@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Alarm Clock</title>
+	<link rel="stylesheet" href="assets/alarm_clock_styles.css"/> 
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'> 
+</head>
+<body>
+	<div class="outer-div">
+		<div class="inner-div">
+			<img src="assets/clock_bg1.jpg">
+		</div>
+		<div class="clock-layout">
+			
+			<div class="clock-display">
+				 <div id="realtime-clock"><!--Realtime clock display-->
+			</div> 
+			</div>
+			
+			<div class="space"></div>
+			<div class="alarmtimebody">
+                	<label>
+                    	<div>
+                            <select class="time" id="hr"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="min"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="sec"></select>
+                        </div>
+                    </label>
+                    <label>
+                        <div>
+                            <select class="time" id="ampm"></select>
+                        </div>
+                    </label>
+            </div>
+            <button id="setButton">Set Alarm</button>
+
+            <div>
+                <h3 class="allalarms">Upcoming Alarms</h3>
+                <!-- Here will be the list of all recent alarm set by the user -->
+                <ul id="upcoming-alarms" type="none">
+
+                </ul>
+            </div>
+		</div>
+	</div>
+	<!-- linking script file -->
+	<script type="text/javascript" src="alarm_clock_script.js"></script>
+</body>
+</html>
